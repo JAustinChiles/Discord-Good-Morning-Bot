@@ -1,0 +1,16 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "YA BOI'S FIRST BOT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Austin",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.0.0-dev"
+  }
+}
+
+//old version "^11.4.2"

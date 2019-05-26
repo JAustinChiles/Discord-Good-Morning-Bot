@@ -37,10 +37,24 @@ bot.on("message", async message =>{
             return message.channel.send("Good morning friend! Let's go on adventures!")
         }
         if(random === 6){
-            return message.channel.send("I'm already on my way.")
+            return message.channel.send("Good morning friend! How are you?")
         }
-        if(random === 7){
+        if(random === 7){ //path to a picture from a song called good morning
             return message.channel.send({files: ["./images/GoodMorning.jpg"]})
+        }
+    }
+
+    //Random number generator for the Magic Conch Shell from Spongebob
+    if(cmd === `${prefix}ohMCS`){
+        let random = Math.floor(Math.random() * (+max - +min))+ +min;
+        if(random === 1 || random === 2 || random === 3){
+            return message.channel.send("Maybe someboday.");
+        }
+        if(random === 4 || random === 5){
+            return message.channel.send("Follow the seahorse.")
+        }
+        if(random === 6 || random === 7){
+            return message.channel.send("Try asking again.")
         }
     }
 
